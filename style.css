@@ -1,0 +1,90 @@
+body{
+    height: 100vh;
+    background-color: aquamarine;
+}
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.Laptop-Large,
+.Laptop,
+.Tablet,
+.Mobile{
+    font-size: 26px;
+    display: none;
+    text-align: center;
+}
+
+@media screen and (max-width:1440px){
+    body{
+        background-color: green;
+    }
+    .Laptop-Large{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1024px){
+    body{
+        background-color:darkgoldenrod;
+    }
+    .Laptop-Large{
+        display: none;
+    }
+    .Laptop{
+        display: block;
+    }
+}
+
+@media screen and (max-width:786px){
+    body{
+        background-color: aqua;
+    }
+    .Laptop-Large{
+        display: none;
+    }
+    .Laptop{
+        display: none;
+    }
+    .Tablet{
+        display: block;
+    }
+    
+}
+@media screen and (max-width:425px) {
+    body{
+        background-color:rgb(178, 45, 45) ;
+    }
+    .Laptop-Large{
+        display: none;
+    }
+    .Laptop{
+        display: none;
+    }
+    .Tablet{
+        display: none;
+    }
+    .Mobile{
+        display: block;
+    }
+}
+/* max.width is not displayed on screen because the browser is not shriking up to 425px so in this reguard i use the max-height in another part for displaying the given output as given in the assignment */
+@media screen and  (max-height:425px) {
+    body{
+        background-color:rgb(178, 45, 45) ;
+    }
+    .Laptop-Large{
+        display: none;
+    }
+    .Laptop{
+        display: none;
+    }
+    .Tablet{
+        display: none;
+    }
+    .Mobile{
+        display: block;
+    }
+}
+
